@@ -36,6 +36,8 @@ let student1 = {
     nextofKinContact: "08135456711",
     languages: ["English","Yoruba","Hausa"]
 }
+
+
 console.log("Hi, my name is"+" "+ student1.name +" and"+ " "+ "I am a student of"+" "+ student1.courseOfStudy);
 
 
@@ -67,7 +69,10 @@ let student2 = new Student("Jasmine",22,"Enugu", "Data"+" "+ "Analysis", 3+ "mon
 
 let student3 = new Student("Sa-adatu",25,"Niger", "Product"+" "+ "Management", 3+ "months", "Adamu","07030021000", ["Gwari", "English"]);
 
+
 console.log(student2.courseOfStudy);
+console.log(student1);
+console.log(student3);
 // =====================================================
 // PART 3: Methods
 // =====================================================
@@ -80,17 +85,32 @@ console.log(student2.courseOfStudy);
 // objects.
 
 // Your code here
-// function resumeToSchool {alert("resume to school at exactly 9:00am"); leaveSchool(); getHome();}
-// let student1 = {
-//     name: "Oye",
-//     stateOfOrigin: "Oyo",
-//     age: 21,
-//     courseOfStudy: "Web Development",
-//     courseDuration: 3 +"months",
-//     nextOfKin: "Mr Jimoh",
-//     nextofKinContact: "08135456711",
-//     languages: ["English","Yoruba","Hausa"];function: resumeToSchool {alert("resume to school at exactly 9:00am"); leaveSchool(); getHome();}
-// }
+
+function Student (name, age, stateOfOrigin, courseOfStudy, courseDuration, nextOfKin, nextofKinContact, languages){
+    this.name = name;
+    this. age = age;
+    this. stateOfOrigin = stateOfOrigin;
+    this. courseOfStudy = courseOfStudy;
+    this. courseDuration = courseDuration;
+    this. nextOfKin = nextOfKin;
+    this. nextofKinContact = nextofKinContact;
+    this. languages = languages;
+    this. resumeToClass = function () { alert("Resume to class at exactly 9:00am")};
+    this. participateInClass = function () {alert("Be active in class")};
+    this. leaveSchool = function() {alert("leave class by 4pm")};
+}
+// two student
+const student1 = new Student("John", 20, "Osun", "Cyber Security", "4 months", "Mr Josh", "08012345678", ["English", "Yoruba"]);
+const student2 = new Student("Nkechi", 24, "Owerri", "Project Management", "3 months", "Mr Agbo", "08012345678", ["English", "Yoruba", "Igbo"]);
+
+// calling the method
+student1.resumeToClass();
+student1.leaveSchool();
+student1.participateInClass();
+
+student2.resumeToClass();
+student2.leaveSchool();
+student2.participateInClass();
 
 // =====================================================
 // REFLECTION
