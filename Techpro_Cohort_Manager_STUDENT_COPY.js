@@ -101,7 +101,7 @@ function Student (name, age, stateOfOrigin, courseOfStudy, courseDuration, nextO
 }
 // two student
 const student1 = new Student("John", 20, "Osun", "Cyber Security", "4 months", "Mr Josh", "08012345678", ["English", "Yoruba"]);
-const student2 = new Student("Nkechi", 24, "Owerri", "Project Management", "3 months", "Mr Agbo", "08012345678", ["English", "Yoruba", "Igbo"]);
+const student2 = new Student("Nkechi", 24, "Owerri", "Project Management", "3 months", "Mr Agbo", "08102345673", ["English", "Yoruba", "Igbo"]);
 
 // calling the method
 student1.resumeToClass();
@@ -121,4 +121,4 @@ student2.participateInClass();
 // more than a handful of similar objects.
 
 // Your answer here
-//
+// It simplifies the process of declearing each variable name and assigning values to it. It also serve as a reusable template for creating multiple objects.
